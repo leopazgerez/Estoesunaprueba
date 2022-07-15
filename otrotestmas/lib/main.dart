@@ -5,24 +5,13 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    const Center(
+      child: Text(
+        'Hola querido mundo!!',
+        textDirection: TextDirection.ltr,
+      )
+    ),
+  );
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Bienvenido a la prueba de aplicacion',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Bienvenido a la prueba de aplicacion'),
-        ),
-        body: const Center(
-          child: Text('Esto es otra onda'),
-        ),
-      ),
-    );
-  }
-}
