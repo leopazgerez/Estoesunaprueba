@@ -33,13 +33,14 @@ class MyAppBar extends StatelessWidget {
         //permite crear un elemento visual rectangular
         height: 56.0, //en pixeles logicos(altura)
         padding: const EdgeInsets.symmetric(
-            vertical: 15.0, horizontal: 8.0), //(Relleno)
+            vertical: 8.0, horizontal: 6.0), //(Relleno)
         decoration: BoxDecoration(
-            color: Colors.red[600],
-            border: Border.all(
-              color: Colors.white,
-              width: 8,
-            )), //Decoracion
+          color: Colors.blue[600],
+          border: Border.all(
+            color: Colors.red,
+            width: 4,
+          ),
+        ), //Decoracion
         //La fila es horizontal con diseno lineal
         child: Row(
           children: [
@@ -75,13 +76,13 @@ class MyScaffold extends StatelessWidget /*(Widget sin estado)*/ {
         child: Column(children: [
       MyAppBar(
         title: Text(
-          ' Example title',
+          ' Tantas lineas para solo esto',
           style: Theme.of(context).primaryTextTheme.headline6,
         ),
       ),
       const Expanded(
         child: Center(
-          child: Text('Hola querido Mundo!!'),
+          child: Text('El tipico: Hola Mundo!!'),
         ),
       ),
     ]));
